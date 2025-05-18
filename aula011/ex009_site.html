@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex008 site</title>
+</head>
+<body>
+    <h1>Identificador de nacionalidade</h1>
+    Seu país: <input type="text" name="t1" id="t1"> 
+    <input type="button" value="nacionalidade" onclick="ver()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function ver(){
+            var t1 = window.document.querySelector('input#t1')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `O seu país é ${t1.value}`
+            if (t1.value.trim().toUpperCase() == 'BRASIL'){
+                res.innerHTML += `<p>Você é <strong>brasileiro</strong></p>`
+            }
+            else{
+                res.innerHTML += `<p>Você é <strong>estrangeiro</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
