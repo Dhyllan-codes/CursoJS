@@ -22,3 +22,21 @@ footer{
     text-align: center;
     font-style: italic;
 }
+
+/* iframe{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+} */
+
+div#div2{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid gray;
+    overflow-y: scroll;
+}
+
+div#div2 > p{
+    margin: 0px;
+}
